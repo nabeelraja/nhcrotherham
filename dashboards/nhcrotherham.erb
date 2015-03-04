@@ -1,0 +1,27 @@
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":2,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":3}]')
+});
+</script>
+<div class="gridster">
+  <ul>
+	<li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+		<div data-id="clinic_details" data-title="Clinic Details" data-view="Clinicdetail"></div>
+    </li>  
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+		<div data-id="total_leads" data-view="Status" data-title="Leads Generated"></div>
+    </li>
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+		<div data-id="target" data-view="Meter" data-title="Target" data-min="0" data-max="100"></div>
+  	</li>
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+		<div data-id="taxis_booked" data-view="Status" data-title="Taxis Booked"></div>
+    </li>
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+		<div data-id="letters_dispatched" data-view="Status" data-title="Letters Dispatched"></div>
+    </li>
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="3">
+		<div data-id="agent_stats" data-view="List" data-unordered="true" data-title="Lead Board" data-moreinfo=""></div>
+	</li>
+  </ul>
+</div>

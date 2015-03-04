@@ -1,0 +1,55 @@
+---
+buzzwords: |+
+  data: {"items":[{"label":"Enterprise","value":6},{"label":"Streamlininess","value":28},{"label":"Pivoting","value":3},{"label":"Paradigm shift","value":8},{"label":"Exit strategy","value":13},{"label":"Web 2.0","value":25},{"label":"Leverage","value":2},{"label":"Turn-key","value":22},{"label":"Synergy","value":4}],"id":"buzzwords","updatedAt":1425484019}
+
+convergence: |+
+  data: {"points":[{"x":532,"y":35},{"x":533,"y":8},{"x":534,"y":43},{"x":535,"y":4},{"x":536,"y":22},{"x":537,"y":14},{"x":538,"y":8},{"x":539,"y":44},{"x":540,"y":44},{"x":541,"y":27}],"id":"convergence","updatedAt":1425484019}
+
+valuation: |+
+  data: {"current":27,"last":51,"id":"valuation","updatedAt":1425484020}
+
+karma: |+
+  data: {"current":84086,"last":167036,"id":"karma","updatedAt":1425484020}
+
+synergy: |+
+  data: {"value":69,"id":"synergy","updatedAt":1425484020}
+
+total_leads: |+
+  data: {"value":48.0,"id":"total_leads","updatedAt":1425483925}
+
+total: |+
+  data: {"value":25,"id":"total","updatedAt":1414508616}
+
+target: |+
+  data: {"value":48.0,"max":150.0,"title":"Clinic Target 150","id":"target","updatedAt":1425483925}
+
+cc1: |+
+  data: {"value":60.0,"id":"cc1","updatedAt":1423644015}
+
+cc2: |+
+  data: {"value":72.0,"id":"cc2","updatedAt":1423644015}
+
+top_agents: |+
+  data: {"items":[{"label":"Alex","value":5},{"label":"Ricky","value":3},{"label":"Steve","value":2},{"label":"Leon","value":2},{"label":"Jeremy","value":2},{"label":"Mark","value":1},{"label":"Brad","value":1},{"label":null,"value":0}],"id":"top_agents","updatedAt":1414588018}
+
+taxis_booked: |+
+  data: {"value":5.0,"id":"taxis_booked","updatedAt":1425483925}
+
+home_visits: |+
+  data: {"value":1.0,"id":"home_visits","updatedAt":1414923747}
+
+letters_dispatched: |+
+  data: {"value":18.0,"id":"letters_dispatched","updatedAt":1425483925}
+
+clinic_details: |+
+  data: {"cliniclocation":"Swansea FC, Liberty Stadium, SA1 2FA","clinicdate":"Friday, 20th February 2015","id":"clinic_details","updatedAt":1425483925}
+
+agent_stats: |+
+  data: {"items":[{"label":"CC2-SonyaH","value":4},{"label":"CC2-Maxine","value":4},{"label":"CC2-AudreyT","value":4},{"label":"CC2-SiemaA","value":3},{"label":"CC2-PaulS","value":3},{"label":"CC2-Hodan","value":3},{"label":"CC2-ChristineD","value":3},{"label":"CC2-NatalieD","value":2},{"label":"CC2-MohbeenA","value":2},{"label":"CC2-Mohammed","value":2},{"label":"CC2-ModuM","value":2},{"label":"CC2-MichelleD","value":2},{"label":"CC2-KyleC","value":2},{"label":"CC2-AtifS","value":2},{"label":"CC2-Shezad","value":1},{"label":"CC2-ShaunH","value":1},{"label":"CC2-LaurenG","value":1},{"label":"CC2-KatherineP","value":1},{"label":"CC2-Julie","value":1},{"label":"CC2-JamesF","value":1},{"label":"CC2-DaveB","value":1},{"label":"CC2-AzadI","value":1},{"label":"CC2-Ayan","value":1},{"label":"CC2-AffiyaS","value":1}],"id":"agent_stats","updatedAt":1425483926}
+
+cc3: |+
+  data: {"value":0.0,"id":"cc3","updatedAt":1423306405}
+
+homevisits: |+
+  data: {"value":0.0,"id":"homevisits","updatedAt":1423644015}
+
