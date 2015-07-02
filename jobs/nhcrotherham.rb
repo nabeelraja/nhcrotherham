@@ -35,44 +35,44 @@ client.authorization = Signet::OAuth2::Client.new(
 # scheduler to fetch the data from the google spreadsheet
 SCHEDULER.every '2m', :first_in => 0 do |job|
 # :first_in sets how long it takes before the job is first run. In this case, it is run immediately
-	
+
 	# request a token for our service account
 	client.authorization.fetch_access_token!
-	
+
 	# get the access token
 	access_token = client.authorization.access_token
-	
-	# code to print access token & expiration time 
+
+	# code to print access token & expiration time
 	#p access_token
 	#p client.authorization.expires_in
-	
+
 	# Creates a session.
 	session = GoogleDrive.login_with_oauth(access_token)
-	
+
 	# get the manangemnt mi sheet
 	mws = session.spreadsheet_by_key(GOOGLE_SHEET_KEY).worksheet_by_title('Management MI')
-	
+
 	# get the agents mi sheet
 	aws = session.spreadsheet_by_key(GOOGLE_SHEET_KEY).worksheet_by_title('Agents MI')
-	
+
 	# reloads the worksheets to get the changes/updated values
 	mws.reload()
 	aws.reload()
-	
+
 	# send the event to the dashboard template to populate the dashboard values
 	send_event('clinic_details', { cliniclocation:mws['C2'], clinicdate:mws['C3'] })
-	send_event('target', { value:mws['C8'], max:mws['C4'], title:"Clinic Target #{mws['C4'].to_i}" })
+	send_event('target', { value:mws['C8'].to_i, max:mws['C4'], title:"Clinic Target #{mws['C4'].to_i}" })
 	send_event('total_leads', { value:mws['C8'] })
 	send_event('taxis_booked', { value:mws['F8'] })
 	send_event('letters_dispatched', { value:mws['C12'] })
-	
+
 	# populate the agent stats widget on the dashboard
 	agent_stats = Hash.new
-	
+
 	for i in 2..aws.num_rows().to_i - 1
 		agent_stats[aws[i,1]] = { label: aws[i,1], value: (aws[i,2]).to_i }
 	end
-	
+
 	send_event('agent_stats', { items: agent_stats.values })
 
 end
